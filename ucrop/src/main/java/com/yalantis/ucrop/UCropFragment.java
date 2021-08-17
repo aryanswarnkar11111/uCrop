@@ -130,6 +130,7 @@ public class UCropFragment extends Fragment {
 
         setupViews(rootView, args);
         setImageData(args);
+        
         setInitialState();
         addBlockingView(rootView);
 
