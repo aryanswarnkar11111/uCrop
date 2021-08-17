@@ -127,7 +127,11 @@ public class UCropActivity extends AppCompatActivity {
 
         final Intent intent = getIntent();
 
-        setupViews(intent);
+        try {
+            setupViews(intent);
+        } catch (Exception e) {
+        }
+        
         setImageData(intent);
         setInitialState();
         addBlockingView();
